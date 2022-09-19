@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* =========================== */
+       /* Reset HMTL   */
+/* =========================== */
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:hover,
+:active,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+      Predefine Variables  
+   =========================== */
+
+:root {
+    --primary-color: #bcc4f2;
+    --secondry-color: #eb19b7;
+    --third-color: #012334;
+    --gray-color: #6f6e6e;
+    --text-color: #070707;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: var(--white-color);
+    text-transform: capitalize;
+    line-height: 4.3rem;
+    margin-bottom: 0.6rem;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-size: 2.325rem;
+    font-weight: 600;
+
+}
+
+.btn-black {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.8rem 3.3rem;
+    color: var(--white-color);
+    background-color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+}
+
+.btn-black:hover {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.8rem 3.3rem;
+    color: var(--black-color);
+    background-color: transparent;
+}
+
+.btn-pink {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.6rem 1.6rem;
+    color: var(--white-color);
+    background-color: var(--secondry-color);
+    border: 2px solid var(--secondry-color);
+}
+
+.btn-pink:hover {
+    background-color: transparent;
+    color: var(--secondry-color);
+}
+
+.wrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* =============== */
+/* Navbar Section  */
+/* =============== */
+
+.navbar-props .navbar {
+    padding: 25px 0px;
+}
+
+.navbar-props .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #d7cff4;
+    margin-right: 8rem;
+}
+
+.navbar-props .nav-item {
+    padding: 0 12px;
+}
+
+.navbar-props .nav-item .nav-link {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* =================== */
+/*    banner slider    */
+/* =================== */
+
+.slider-banner-section {
+    position: relative;
+}
+
+.slick-slider {
+    /* position: absolute; */
+}
+
+.slider-img1 {
+    background: url('../images/banner-1.jpg') no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.slider-img2 {
+    background: url('../images/banner-2.jpg') no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.slider-img3 {
+    background: url('../images/banner-3.jpg') no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.slick-slider .prevArrow,
+.slick-slider .nextArrow {
+    position: absolute;
+    z-index: 1;
+    padding: 12px 26px;
+    border: 0;
+    font-size: 32px;
+    transition: all linear .2s;
+}
+
+.slick-slider .slick-next {
+    bottom: 388px;
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+}
+
+.slick-slider .slick-prev {
+    top: 200px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.slider-content {
+    position: relative;
+    top: 280px;
+    left: 180px;
+    z-index: 999;
+}
+
+.slider-content h4 {
+    text-transform: uppercase;
+    color: #0e020c;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    line-height: 4.5rem;
+}
+
+.slider-content h5 {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+
+}
+
+.slider-content .btn-black {
+    margin-top: 3rem;
+}
+
+.slider-content::before {
+    content: 'GLASSES';
+    position: absolute;
+    top: -220px;
+    left: 1000px;
+    color: var(--white-color);
+    font-size: 16px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -8px;
+}
+
+.sc1::after {
+    content: '01-02';
+    position: absolute;
+    color: var(--white-color);
+    bottom: -200px;
+    left: 985px;
+}
+
+.sc2::after {
+    content: '02-03';
+    position: absolute;
+    color: var(--white-color);
+    bottom: -200px;
+    left: 985px;
+}
+
+.sc3::after {
+    content: '03-04';
+    position: absolute;
+    color: var(--white-color);
+    bottom: -200px;
+    left: 985px;
+}
+
+/* ===================== */
+/*    About Section      */
+/* ===================== */
+
+.about-os-section h2 {
+    font-size: 3.40rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.about-os-section h2 span {
+    color: #29292a;
+}
+
+.about-os-section h2::first-letter {
+    font-size: 6rem;
+}
+
+.about-os-section p {
+    margin-bottom: 3.6rem;
+    padding-right: 4.1rem;
+}
+
+.about-os-section .row {
+    position: relative;
+    align-items: center;
+}
+
+/* ===================== */
+/*  Our Glasses Section  */
+/* ===================== */
+.our-glasses {
+    background-color: var(--primary-color);
+}
+
+.our-glasses h2 {
+    font-size: 3.40rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+    color: #3d3f4f;
+}
+
+.our-glasses h2 span {
+    color: #6f6e6e;
+}
+
+.our-glasses h2::first-letter {
+    font-size: 6rem;
+    color: var(--black-color);
+}
+
+.our-glass-item img {
+    margin: 3rem 0.5rem;
+}
+
+.our-glass-item h6 {
+    font-size: 1.4rem;
+}
+
+.our-glass-item a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.our-glass-item {
+    height: 280px;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.sm-btn {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+/* ===================== */
+/*  Best Quality Section */
+/* ===================== */
+
+.best-quality-section .row {
+    position: relative;
+    align-items: center;
+}
+
+/* .best-quality-section  */
+.best-quality-section h2 {
+    font-size: 3.40rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.best-quality-section h2 span {
+    color: #012334;
+}
+
+.best-quality-section h2::first-letter {
+    font-size: 6rem;
+    /* color: var(--black-color); */
+}
+
+.quakity-list {
+    counter-reset: p;
+}
+
+.quakity-list p {
+    padding: 13px 0;
+    font-size: 18px;
+}
+
+.quakity-list p::before {
+    counter-increment: p;
+    content: counter(p, decimal-leading-zero);
+    position: absolute;
+    font-size: 18px;
+    font-weight: 800;
+    left: -22px;
+    color: #050606;
+}
+
+/* ======================= */
+/* book our special offer  */
+/* ======================= */
+.book-oso {
+    position: relative;
+}
+
+.book-oso-1 {
+    background-color: #d8dde1;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.book-oso-2 h2 {
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: 700;
+    padding: 0 7rem;
+    word-spacing: 100vw;
+    margin-bottom: 3.5rem;
+}
+
+.book-oso-2 .btn-pink {
+    margin: 0 7rem;
+}
+
+.book-oso-2 {
+    background-color: #bcc4f2;
+    padding: 8rem 0;
+}
+
+.book-oso-1::after {
+    content: '$60';
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+    position: absolute;
+    font-size: 38PX;
+    font-weight: 700;
+    text-align: center;
+    padding: 33px 0px;
+    top: 342px;
+    left: 600px;
+}
+
+/* =========================== */
+/* Buy Your Stylish Glasses   */
+/* ========================= */
+
+.buy-section {
+    text-align: center;
+}
+
+.buy-section h2 {
+    font-size: 3.40rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.buy-section h2 span {
+    color: #020409;
+}
+
+.buy-section h2 span:last-child {
+    color: #6f6e6e;
+}
+
+.buy-section h2::first-letter {
+    font-size: 6rem;
+}
+
+
+.testimonial {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.testimonial h2 {
+    font-size: 3.40rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.testimonial h2 span {
+    color: #012334;
+}
+
+.testimonial h2::first-letter{
+    font-size: 6rem;
+}
+
